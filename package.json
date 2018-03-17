@@ -3,20 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "start": "webpack-dev-server --hot --config ./webpack.config.js --mode development",
     "build": "webpack -p"
   },
   "devDependencies": {
+    "css-loader": "^0.28.10",
     "source-map-loader": "^0.2.3",
+    "style-loader": "^0.20.2",
     "ts-loader": "^4.0.1",
     "typescript": "^2.7.2",
-    "webpack": "^4.0.1",
+    "typings-for-css-modules-loader": "^1.7.0",
+    "webpack": "^4.1.0",
     "webpack-cli": "^2.0.10",
     "webpack-dev-server": "^3.1.0"
   },
   "dependencies": {
     "@types/react": "^16.0.40",
     "@types/react-dom": "^16.0.4",
+    "moment": "^2.21.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
